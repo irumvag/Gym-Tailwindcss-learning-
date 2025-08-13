@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
-
+@theme{
+  --aspect-retro:4/2;
+}
 
 
 /* :root {

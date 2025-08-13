@@ -5,17 +5,133 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/src/style.css" rel="stylesheet">
 </head>
-<body class="m-5">
+<body class="m-5 bg-amber-200">
+  <div>
   <h1 class="text-3xl font-bold p-10 text-end">
     Gym-Tailwindcss-Training
   </h1>
+  </div>
+  <h1 class="text-2xl text-center font-bold my-5">Responsive designs</h1>
+  <div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 sm:text-white md:grid-cols-3">
+      <p class=" bg-blue-500 sm:hidden">
+        item1
+      </p>
+    </div>
+    <div>
+      <p class=" bg-yellow-500">
+        item2
+      </p>
+    </div>
+    <div>
+      <p class=" bg-inherit">
+        item3
+      </p>
+    </div>
+    <div>
+      <p class=" bg-blue-500">
+        item4
+      </p>
+    </div>
+  </div>
+
+  <h1 class="text-2xl text-center font-bold my-5">Hover, Animations, Transitions & Transformations</h1>
+
+  <div class="w-4/5 mx-auto text-center py-12">
+    <a href="" 
+        class="bg-blue-500 text-white my-10 py-4 px-8 rounded text-xl hover:bg-blue-300 transition-color duration-500 delay-200">
+      Click me
+    </a>
+    
+    <div class="grid grid-cols-5"><img src="https://cdn.pixabay.com/photo/2025/04/13/03/17/horse-9531049_1280.jpg" 
+    alt=""
+    class="hover:skew-x-6 w-30  hover:translate-y-4">
+  <img src="https://cdn.pixabay.com/photo/2025/04/13/03/17/horse-9531049_1280.jpg" 
+    alt=""
+    class="hover:animate-bounce w-30">
+    <img src="https://cdn.pixabay.com/photo/2025/04/13/03/17/horse-9531049_1280.jpg" 
+    alt=""
+    class="hover:animate-spin w-30">
+    <img src="https://cdn.pixabay.com/photo/2025/04/13/03/17/horse-9531049_1280.jpg" 
+    alt=""
+    class="hover:animate-ping w-30">
+  </div>
+  </div>
+
+  <h1 class="text-2xl text-center font-bold my-5">Flex</h1>
+  <div class="flex flex-wrap gap-4">
+    <div class="bg-red-800 text-white h-26 flex-auto">
+      <p>Flex item 1</p>
+    </div>
+    <div class="bg-cyan-800 text-white h-26 flex-auto">
+      <p>Flex item 2</p>
+    </div>
+    <div class="bg-blue-800 text-white h-26 flex ">
+      <p>Flex item 3</p>
+    </div>
+  </div>
+  <h1 class="text-2xl text-center font-bold my-5">Grid</h1>
+  <div class="grid grid-cols-3 gap-4 p-1 border-1 border-blue-900">
+    <div class="bg-red-500 text-white h-full col-span-2 row-span-2">
+      <p>
+        This is my first grid item
+      </p>
+    </div>
+    <div class="bg-blue-500 text-white h-24">
+      <p>
+        This is my second grid item
+      </p>
+    </div>
+    <div class="bg-yellow-500 text-white h-24">
+      <p>
+        This is my third grid item
+      </p>
+    </div>
+    <div class="bg-indigo-500 text-white h-24">
+      <p>
+        This is my fouth grid item
+      </p>
+    </div>
+  </div>
+  <h1 class="text-2xl text-center font-bold my-5">Padding and Margin</h1>
+  <div class="my-10">
+    <h1 class="bg-red-500 text-white p-12 m-10  border-4 border-amber-50">
+      Tailwind!
+    </h1>
+  </div>
+  <div class="my-4 bg w-full bg-cover bg-no-repeat bg-fixed"
+  style="background-image:url('https://cdn.pixabay.com/photo/2025/04/13/03/17/horse-9531049_1280.jpg');height: 500px;"
+  >
+  <p class="text-center text-5xl text-white">Welcome to the course</p>
+  </div>
+
+  <div class="bg-gradient-to-r from-blue-300 to-blue-700 via-yellow-400  w-full h-90 ">
+
+  </div>
+  <div class="my-10">
+    <div>
+      <h1 class="font-sans text-3xl font-bold uppercase text-indigo-700 text-center">
+        WElcome to my Tailwind course
+      </h1>
+      <h2 class="font-serif text-xl underline lowercase text-green-400 text-right">
+        Created by code with Gad
+      </h2>
+      <p class="font-mono text-lg italic font-thin capitalize text-justify">
+        Welcome to my free TailwindCSS course. I hope that you will learn enough and if you have any questions, you can simply reach out in Instagram where you can find me under the name of @codewithdary.
+        <br><span class="not-italic text-yellow-900">Anyways, have fun with this course!<span>
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class="mt-10 p-4 normal-case border-4 border-red-950 rounded-xl">
+    <h1 class="text-3xl font-bold text-green-300 uppercase">On 12/08/2025 study</h1>
   <p>Layout-aspect-ratio</p>
   <hr>
   <div class="layoutcontainer">
     <div class="aspect columns-3 gap-0">
       <img src="https://placebear.com/300/450" class="aspect-3/2" height="300px" width="400px" srcset="">
       <p>3/2</p>
-      <iframe class="aspect-video h-1/2 w-1/4" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+      <iframe class="aspect-video" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
       <p>16/9</p>
       <img src="https://placebear.com/400/300" class="aspect-retro" alt="">
       <p>4/2</p>
@@ -77,8 +193,6 @@
     </p>
   </div>
   <hr>
-
-
-
+</div>
 </body>
 </html>
